@@ -42,7 +42,7 @@
         <label id="texto-normal" class="mt-">Presiona el <i class="fa-solid fa-heart"></i> para pausar nuestra
             canción</label>
         <img class="img-play mt-3" src="assets/img/play.png" alt="">
-        <label id="texto-normal-mont" class="mt-2">Dios permitió que nos encontráramos y próximamente nos dará su
+        <label id="texto-normal-mont" class="mt-2 m-4">Dios permitió que nos encontráramos y próximamente nos dará su
             bendición para ser instrumentos de su amor y de su gracia como esposos. ¡La felicidad se completa!</label>
         <img class="img-play-flor mt-4" src="assets/img/flores.png" alt="">
         <label id="texto-normal-mont" class="mt-4">Con la bendicion de nuestros padres</label>
@@ -178,16 +178,44 @@
 
 
 
-
-
-
     <div class="body-noscasamos text-center justify-content-center ">
         <p id="texto-normal" class="py-4" style="font-size: 24px;">Intinerario</p>
     
-        <img class="img-play mt-3" src="assets/img/dancing2.png" alt="">
+        <img class="img-play mt-3" src="assets/img/dancing2.png" alt="" style="padding-bottom: 30px;">
 
-       
+        <img src="assets/img/foto-4.jpg" alt="" id="foto-tiempo" class="mt-4">
+
     </div>
+
+
+    <div class="body-noscasamos text-center justify-content-center ">
+        <p style="font-size: 38px;color: white;margin-bottom: 0px;"><i class="fa-solid fa-envelope"></i></p>
+        <p id="texto-normal" class="pb-4" style="font-size: 24px;">Lluvia de sobres</p>
+        <label id="texto-normal-mont" class="mx-4">Gracias por tu compañía en nuestra nueva etapa. Si quieres tener un detalle con nosotros, ayúdanos a tener nuestra luna de miel <i class="fa-solid fa-heart"></i>.</label>
+
+        <p id="texto-normal-mont" class="mt-3" >N° de cuenta</p>
+        <p id="texto-normal-mont" style="font-size: 22px;" class="mb-2">Roxana Elizalde</p>
+        <label class="cuenta-banco" id="cuentaBanco">124124323132123122</label>
+        <label class="cuenta-banco">BBVA</label>
+        
+
+
+
+
+
+        <div class="my-4"></div>
+        <p id="texto-normal" class="pb-4" style="font-size: 24px;">Confirmar asistencia</p>
+        <label id="texto-normal-mont" class="mx-4">Tu presencia es importante para nosotros, por favor confirmanos tu asistencia por WhatsApp hasta el 10 de Diciembre</label>
+        <div class="p-3">
+
+            <button class="btn-primario mx-2">Roxana</button>
+            <button class="btn-primario mx-2">Manuel</button>
+
+
+        </div>
+
+    </div>
+
 
 
 
@@ -235,6 +263,22 @@
         document.getElementById("minutos").innerHTML = minutos;
         document.getElementById("segundos").innerHTML = segundos;
     }, 1000);
+
+
+    const label = document.getElementById('cuentaBanco');
+
+    label.addEventListener('click', () => {
+        const texto = label.textContent;
+        navigator.clipboard.writeText(texto)
+            .then(() => {
+                alert('Texto copiado: ' + texto);
+            })
+            .catch(err => {
+                console.error('Error al copiar el texto: ', err);
+            });
+    });
+
+    
 </script>
 
 
