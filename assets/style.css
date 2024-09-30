@@ -1,0 +1,231 @@
+
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+
+#nombre-boda{
+    font-family: "Aboreto", system-ui;
+    color: antiquewhite;
+}
+
+
+
+.body {
+    height: 100vh; /* Ocupar el 100% de la altura de la ventana */
+    width: 100%; /* Ocupar el 100% del ancho */
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url('../assets/img/foto-body-2.jpg'); /* Imagen de fondo principal */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    position: relative; /* Necesario para el posicionamiento del overlay */
+}
+
+#foto-tiempo{
+    max-width: 100%; /* La imagen no excederá el ancho del contenedor */
+    height: auto;    /* Mantiene la proporción de la imagen */
+
+}
+
+.body-final{
+    height: 100%; /* Ocupar el 100% de la altura de la ventana */
+    width: 100%; /* Ocupar el 100% del ancho */
+    text-align: center; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #A8B2BC;
+}
+
+.body-tiempo{
+    height: 50px; /* Ocupar el 100% de la altura de la ventana */
+    width: 100%; /* Ocupar el 100% del ancho */
+    text-align: center; 
+    justify-content: center; 
+    align-items: center; 
+    background-image: url('../assets/img/dia.png'); /* Imagen de fondo del overlay */
+    z-index: 1000;
+    position: relative;
+    margin-top: -40px;
+}
+
+
+.overlay {
+    position: absolute; /* Posición absoluta para que se superponga */
+    bottom: 0; /* Empieza desde la parte inferior */
+    left: 0; /* Empieza desde la parte izquierda */
+    height: 35%; /* Ocupa el 35% de la altura */
+    width: 100%; /* Ocupa todo el ancho */
+    background-image: url('../assets/img/fondo.png'); /* Imagen de fondo del overlay */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+    display: flex; /* Usar flexbox para centrar el texto */
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    padding: 20px 0; /* Espacio arriba y abajo del texto */
+}
+
+#nombre-boda {
+    margin: 0; /* Eliminar márgenes por defecto */
+    font-size: 65px; /* Tamaño de fuente */
+    color: white; /* Color del texto */
+    text-align: center;
+    line-height: 75px;
+    font-weight: 300;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.066);
+}
+
+
+#casamos{
+    color: white;
+    font-size: 28px;
+    font-family: "Aboreto", system-ui;
+    margin: 0px;
+}
+
+
+
+
+#texto-normal{
+    color: white;
+    font-size: 14px;
+    font-family: "Aboreto", system-ui;
+    margin: 0px;
+}
+
+#texto-normal-mont{
+    color: white;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    font-weight: 600;
+}
+
+
+
+.img-play {
+    width: 80%;
+    height: auto; /* Mantiene la proporción */
+}
+
+.img-anillos{
+    width: 20%;
+    height: auto; /* Mantiene la proporción */
+}
+
+
+.img-play-flor{
+    width: 80%;
+    height: auto; /* Mantiene la proporción */
+}
+
+
+.body-dos{
+    height: auto;
+    background-color: #A8B2BC;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 35px;
+ 
+
+}
+
+
+.btn-primario{
+
+    border: none;
+    background-color:#fff ;
+    color: #253F5A;
+    padding: 6px;
+    border-radius: 10px;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+.body-noscasamos{
+    background-color: #A8B2BC;
+}
+
+
+.texto-datos{
+    color: white;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0px;
+    font-weight: 600;
+}
+
+
+
+
+  /* Media Query para pantallas más pequeñas (ej. tablets) */
+  @media (max-width: 768px) {
+    .titulo-2 {
+        font-size: 20px;
+    }
+    .titulo{
+        font-size: 26px;
+        font-weight: 700;
+    }
+
+    .texto{
+        font-size: 16px;
+    }
+    
+    .numero{
+        font-size: 14px;
+    }
+        .main-content {
+            padding: 10px;
+        }
+    }
+
+/* Media Query para pantallas aún más pequeñas (ej. smartphones) */
+    @media (max-width: 480px) {
+        .header, .footer {
+            font-size: 16px;
+        }
+
+        .titulo-2 {
+            font-size: 20px;
+        }
+        .titulo{
+            font-size: 26px;
+            font-weight: 700;
+        }
+
+        .texto{
+            font-size: 14px;
+        }
+
+        .numero{
+            font-size: 14px;
+            width: 20px;
+            height: 20px;
+        }
+
+        .texto-lista{
+            font-size: 16px;
+        }
+
+
+        .row-principal{
+            width: 95%;
+        }
+
+
+    }
+
+
+    .tiempo-resta{
+        font-size: 26px;
+        color: white;
+        font-weight: 600;
+    }
+
+    .tiempo-resta-dato{
+        font-size: 12px;
+        color: white;
+        font-weight: 600;
+    }
