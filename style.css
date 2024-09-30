@@ -1,12 +1,26 @@
 
-*{
-    font-family: 'Montserrat', sans-serif;
-}
 
 #nombre-boda{
     font-family: "Aboreto", system-ui;
     color: antiquewhite;
 }
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Resto de tu CSS ... */
+
 
 
 
@@ -21,6 +35,11 @@
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
     position: relative; /* Necesario para el posicionamiento del overlay */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden; /* Evita el desplazamiento horizontal */
+
 }
 
 #foto-tiempo{
